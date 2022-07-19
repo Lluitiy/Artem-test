@@ -129,11 +129,18 @@
     &__list {
       display: flex;
       flex-direction: column;
+      flex-grow: 1;
       gap: 32px;  
     }
 
+    &__contacts {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
     &__socials {
       display: flex;
+      flex-wrap: wrap;
       gap: 10px;
     }
 
@@ -169,8 +176,8 @@
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: 697px;
-
+  max-height: 697px;
+  padding: 48px 40px;
 
   overflow: hidden;
 

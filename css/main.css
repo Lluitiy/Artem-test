@@ -449,10 +449,17 @@ img {
 .burger__list {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  gap: 32px;
+}
+.burger__contacts {
+  display: flex;
+  flex-direction: column;
   gap: 32px;
 }
 .burger__socials {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 .burger__networks {
@@ -481,7 +488,8 @@ img {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: 697px;
+  max-height: 697px;
+  padding: 48px 40px;
   overflow: hidden;
 }
 

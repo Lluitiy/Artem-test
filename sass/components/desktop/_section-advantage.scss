@@ -1,0 +1,93 @@
+.advantage {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin: 0 auto;
+  align-items: center;
+
+  &__list {
+    display: flex;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      margin: 0;
+    }
+    @media screen and (min-width: 768px) {
+      margin: -15px;
+      flex-wrap: wrap;
+    }
+  }
+  &__item {
+    // width: calc((100% - 3 * 30px) / 4);
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 767px) {
+      margin: 0;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: calc((100% - 60px) / 2);
+      margin: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 120px) / 4);
+      margin: 15px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    background-color: $fone-comand-color;
+    border-radius: 4px;
+
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $fone-comand-color;
+    border-radius: 4px;
+
+    margin: 0;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 767px) {
+      max-width: 450px;
+    }
+  }
+
+  &__title {
+    line-height: 1.14;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    align-items: center;
+    justify-content: center;
+
+    color: $title-text-color;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+  }
+  &__content {
+    display: block;
+    text-align: left;
+    justify-content: end;
+    align-items: center;
+  }
+
+  /* -----------------------------------------------------------------ОСОБЕННОСТИ------------------------------------------------------- */
+
+  &__icon {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text {
+    line-height: 1.71;
+    color: $primary-text-color;
+  }
+}

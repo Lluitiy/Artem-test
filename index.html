@@ -33,7 +33,7 @@
           <div class="menu__modal"> 
             <button
                 type="button"
-                class="menu__button is-open"
+                class="menu__button"
                 aria-expanded="false"
                 aria-controls="menu-container"
                 data-menu-button=""
@@ -51,6 +51,23 @@
                   ></use>
                 </svg>
               </button>
+              <div class="burger" data-menu>
+                <ul class="burger__list">
+                  <li><a href="./index.html" class="burger__item burger__current">Студия</a></li>
+                  <li><a href="./portfolio.html" class="burger__item">Портфолио</a></li>
+                  <li><a href="#" class="burger__item">Контакты</a></li>
+                </ul>
+                <ul class="burger__list">
+                  <li><a href="tel:+380961111111" class="burger__item burger__current">+38 096 111 11 11</a></li>
+                  <li><a href="mailto:info@devstudio.com" class="burger__item">info@devstudio.com</a></li>
+                </ul>
+                <ul class="burger__socials">
+                  <li><a href="" class="burger__networks">Instagram</a></li>
+                  <li><a href="" class="burger__networks">Twitter</a></li>
+                  <li><a href="" class="burger__networks">Facebook</a></li>
+                  <li><a href="" class="burger__networks">LinkedIn</a></li>
+                </ul>
+              </div>
               <ul class="menu__ul">
                 <li class="menu__item">
                   <a href="./index.html" class="menu__link current">Студия</a>
@@ -583,7 +600,7 @@
       </section>
     </footer>
 
-    <!-- <footer class="footer">
+ <footer class="footer">
       <section class="footer__section">
         <div class="container-footer">
           <div class="footer__nav-contacts">
@@ -692,8 +709,8 @@
         </div>
       </section>
     </footer>
-     -->
-    <!-- <div data-modal class="modal is-hidden">
+     
+     <div data-modal class="modal is-hidden">
       <div class="modal__form">
         <h2 class="modal__header">Оставьте свои данные, мы вам перезвоним</h2>
 
@@ -755,8 +772,9 @@
           </svg>
         </button>
       </div>
-    </div> -->
+    </div> 
 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
